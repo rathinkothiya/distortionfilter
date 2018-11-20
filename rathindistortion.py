@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Nov 18 23:50:30 2018
-
 @author: Rathin
 """
-
-
+#This code implements the distortion filter
+#It modulates the amplitude and then does the clipping using a given thresold
 import pandas as pd
-
 data = pd.read_csv('rathinfinal300500.dat', sep='\s+', header=None, skiprows=2)# read file frmo second line
 
 x=data[0] #read colmn 0
